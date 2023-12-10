@@ -1,0 +1,20 @@
+
+<div class="image_row">
+  
+    <h3>This is the inputed image</h3>
+    <img src="{{ url_for('static', filename='original_img/original.jpg')}}" width="300" height="300"> 
+
+    <h3>This is the output image</h3> 
+    <img src="{{ url_for('static', filename='inpainted_img/inpainted.jpg')}}" width="300" height="300"> 
+
+</div>
+
+
+
+<style>
+  .image_row {
+    width: 300px; 
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
